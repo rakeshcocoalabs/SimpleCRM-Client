@@ -83,6 +83,16 @@ render() {
 			</ListItem>
 			</List>
 		</Link>
+		<Link to='/add-contract' style={styles.link}>
+		<List>
+			<ListItem button key='Add Contract'>
+			<ListItemIcon><PermContactCalendarIcon/>
+			</ListItemIcon>
+			<ListItemText primary='Add Contract' />
+			</ListItem>
+			</List>
+		</Link>
+
 		</Drawer>
 	</div>
 	);

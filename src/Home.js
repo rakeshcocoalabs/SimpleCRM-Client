@@ -26,8 +26,14 @@ const Login = withStyles()(props => {
 
 
 	const handleSubmit = () => {
-		history.push("/about", { from: "HomePage" })
-		console.log(email,password)
+
+		if(email === "admin@company.com" && password === "123456"){
+			history.push("/about", { from: "HomePage" })
+		}
+		else {
+
+			alert('wrong credentials')
+		}
 	}
 
 	const forgotPassword = () => {
